@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Generate your <span>QR Code</span></h1>
+      <h3>
+        Enter the link in the field below and press the button to create your
+        custom QR code!
+      </h3>
+    </header>
+    <div class="form">
+      <div class="form-head">
+        <p class="quote">
+          "<span class="quote-message">Some random business quotes here</span>"
+        </p>
+        <p>- <span class="quote-author">Author</span></p>
+      </div>
+      <div class="form-body">
+        <input class="input-url" type="text" placeholder="URL" />
+        <button class="btn generator-btn">Generate</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <div class="modal-qr hidden">
+      <button class="close-modal">&times;</button>
+      <div class="modal-head">
+        <h3 class="notification-message">Great! Your QR code is ready!</h3>
+        <button class="btn downloadBtn" download="...">Download</button>
+      </div>
+      <div class="modal-body">
+        <img class="qr-code-img" src="" alt="qr code image" />
+      </div>
+    </div>
+  </body>
+</html>
